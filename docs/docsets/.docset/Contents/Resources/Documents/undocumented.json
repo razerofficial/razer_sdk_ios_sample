@@ -1,0 +1,208 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/AppDelegate.swift",
+      "line": 20,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/AppDelegate.swift",
+      "line": 22,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/AppDelegate.swift",
+      "line": 101,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/AppDelegate.swift",
+      "line": 106,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/AppDelegate.swift",
+      "line": 110,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/AppDelegate.swift",
+      "line": 114,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 18,
+      "symbol": "UIImageView.setImageFromURl(stringImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 37,
+      "symbol": "DetailViewController.strAccessToken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 38,
+      "symbol": "DetailViewController.paramValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 39,
+      "symbol": "DetailViewController.lblAceessToken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 42,
+      "symbol": "DetailViewController.lblExpiry",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 43,
+      "symbol": "DetailViewController.lblRazerID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 46,
+      "symbol": "DetailViewController.lbluuid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 47,
+      "symbol": "DetailViewController.imgAvatar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 48,
+      "symbol": "DetailViewController.vw1",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 49,
+      "symbol": "DetailViewController.vw2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 50,
+      "symbol": "DetailViewController.btnLogout",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 52,
+      "symbol": "DetailViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/DetailViewController.swift",
+      "line": 97,
+      "symbol": "DetailViewController.logout()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/TokenManager.swift",
+      "line": 48,
+      "symbol": "Token.isValidToSave()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/TokenManager.swift",
+      "line": 66,
+      "symbol": "Date.timeInString()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/TokenManager.swift",
+      "line": 80,
+      "symbol": "String.stringToTime()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/WebViewController.swift",
+      "line": 22,
+      "symbol": "WebViewController.webViewSample",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/WebViewController.swift",
+      "line": 38,
+      "symbol": "WebViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/WebViewController.swift",
+      "line": 91,
+      "symbol": "WebViewController.userContentController(_:didReceive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/WebViewController.swift",
+      "line": 96,
+      "symbol": "WebViewController.webView(_:decidePolicyFor:decisionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/WebViewController.swift",
+      "line": 102,
+      "symbol": "WebViewController.webView(_:didFinish:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/WebViewController.swift",
+      "line": 147,
+      "symbol": "WebViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp/ThirdPartySDKSampleApp/WebViewController.swift",
+      "line": 152,
+      "symbol": "WebViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/umang.davessar/Documents/POC/ThirdPartySDKSampleApp"
+}

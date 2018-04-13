@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DetailViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/DetailViewController" class="dashAnchor"></a>
+    <a title="DetailViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (63% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DetailViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DetailViewController.html">DetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Token.html">Token</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebViewController.html">WebViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DetailViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">DetailViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span><span class="kt">NVActivityIndicatorViewable</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class is designed and implemented to show the Active user&rsquo;s detail (Razer ID, Open ID, Avatar, Email, Acees token and Expiry).</p>
+
+<p>After Authorize from other app, user will come to this screen</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ThirdPartySDKSampleApp20DetailViewControllerC14strAccessTokenSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/strAccessToken" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ThirdPartySDKSampleApp20DetailViewControllerC14strAccessTokenSSSgv">strAccessToken</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Access Token receives from Demo App</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">strAccessToken</span> <span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:22ThirdPartySDKSampleApp20DetailViewControllerC10paramValues10DictionaryVySSypGSgv"></a>
+                    <a name="//apple_ref/swift/Property/paramValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22ThirdPartySDKSampleApp20DetailViewControllerC10paramValues10DictionaryVySSypGSgv">paramValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Params Dictionary receives from other app with required details</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">paramValue</span> <span class="p">:</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">String</span><span class="p">,</span> <span class="kt">Any</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblAceessToken"></a>
+                    <a name="//apple_ref/swift/Property/lblAceessToken" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblAceessToken">lblAceessToken</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label to show Aceess Token Value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">lblAceessToken</span> <span class="p">:</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblEmail"></a>
+                    <a name="//apple_ref/swift/Property/lblEmail" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblEmail">lblEmail</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SCOPE_PROFILE *</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">lblEmail</span> <span class="p">:</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblExpiry"></a>
+                    <a name="//apple_ref/swift/Property/lblExpiry" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblExpiry">lblExpiry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">lblExpiry</span> <span class="p">:</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblRazerID"></a>
+                    <a name="//apple_ref/swift/Property/lblRazerID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblRazerID">lblRazerID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">lblRazerID</span> <span class="p">:</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblOpenID"></a>
+                    <a name="//apple_ref/swift/Property/lblOpenID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lblOpenID">lblOpenID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SCOPE_OPENID *</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">lblOpenID</span> <span class="p">:</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lbluuid"></a>
+                    <a name="//apple_ref/swift/Property/lbluuid" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)lbluuid">lbluuid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">lbluuid</span> <span class="p">:</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)imgAvatar"></a>
+                    <a name="//apple_ref/swift/Property/imgAvatar" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)imgAvatar">imgAvatar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">imgAvatar</span> <span class="p">:</span> <span class="kt">UIImageView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)vw1"></a>
+                    <a name="//apple_ref/swift/Property/vw1" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)vw1">vw1</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">vw1</span> <span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)vw2"></a>
+                    <a name="//apple_ref/swift/Property/vw2" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)vw2">vw2</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">vw2</span> <span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)btnLogout"></a>
+                    <a name="//apple_ref/swift/Property/btnLogout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(py)btnLogout">btnLogout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span> <span class="k">var</span> <span class="nv">btnLogout</span> <span class="p">:</span> <span class="kt">UIButton</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after the controller&#39;s view is loaded into memory.
+This method is called after the view controller has loaded its view hierarchy into memory. This method is called regardless of whether the view hierarchy was loaded from a nib file or created programmatically in the loadView() method. You usually override this method to perform additional initialization on views that were loaded from nib files.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(im)logout"></a>
+                    <a name="//apple_ref/swift/Method/logout()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ThirdPartySDKSampleApp@objc(cs)DetailViewController(im)logout">logout()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logout will delete the webview cookies ad=nd redirect user to main screen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A4F10808D32DC287C547F38 /* Pods_ThirdPartySDKSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75A65EFDABC33755FBCAAB /* Pods_ThirdPartySDKSampleApp.framework */; };
+		7B0436902043BE49000BD35F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B04368E2043BE48000BD35F /* Crashlytics.framework */; };
+		7B0436912043BE49000BD35F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B04368F2043BE49000BD35F /* Fabric.framework */; };
+		7BB72E542016DD20007075D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E532016DD20007075D7 /* AppDelegate.swift */; };
+		7BB72E562016DD20007075D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E552016DD20007075D7 /* ViewController.swift */; };
+		7BB72E592016DD20007075D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E572016DD20007075D7 /* Main.storyboard */; };
+		7BB72E5B2016DD20007075D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E5A2016DD20007075D7 /* Assets.xcassets */; };
+		7BB72E5E2016DD20007075D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E5C2016DD20007075D7 /* LaunchScreen.storyboard */; };
+		7BB72E692016DD20007075D7 /* ThirdPartySDKSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E682016DD20007075D7 /* ThirdPartySDKSampleAppTests.swift */; };
+		7BB72E742016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E732016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift */; };
+		7BB72E8C2016FEDA007075D7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E8B2016FEDA007075D7 /* WebViewController.swift */; };
+		7BD5832A204918BA00D1489C /* RazerAUTHSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */; };
+		7BD5832B204918BA00D1489C /* RazerAUTHSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BD801D0202017D800AF3D15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD801CF202017D800AF3D15 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BB72E652016DD20007075D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BB72E482016DD20007075D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB72E4F2016DD20007075D7;
+			remoteInfo = ThirdPartySDKSampleApp;
+		};
+		7BB72E702016DD20007075D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BB72E482016DD20007075D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BB72E4F2016DD20007075D7;
+			remoteInfo = ThirdPartySDKSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BD5832C204918BA00D1489C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BD5832B204918BA00D1489C /* RazerAUTHSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C75A65EFDABC33755FBCAAB /* Pods_ThirdPartySDKSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThirdPartySDKSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B02AD35202302600085F25A /* ThirdPartySDKSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThirdPartySDKSampleApp.entitlements; sourceTree = "<group>"; };
+		7B02AD36202306DA0085F25A /* ThirdPartySDKSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThirdPartySDKSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B04368E2043BE48000BD35F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		7B04368F2043BE49000BD35F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		7BB72E502016DD20007075D7 /* ThirdPartySDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdPartySDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB72E532016DD20007075D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BB72E552016DD20007075D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BB72E582016DD20007075D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BB72E5A2016DD20007075D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BB72E5D2016DD20007075D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BB72E5F2016DD20007075D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB72E642016DD20007075D7 /* ThirdPartySDKSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartySDKSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB72E682016DD20007075D7 /* ThirdPartySDKSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartySDKSampleAppTests.swift; sourceTree = "<group>"; };
+		7BB72E6A2016DD20007075D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB72E6F2016DD20007075D7 /* ThirdPartySDKSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartySDKSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB72E732016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartySDKSampleAppUITests.swift; sourceTree = "<group>"; };
+		7BB72E752016DD20007075D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB72E8B2016FEDA007075D7 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7BBA537F20244A6B00C13BDF /* razerMobileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = razerMobileKit.framework; path = Pods/mobilekit/mobilekit/razerMobileKit.framework; sourceTree = "<group>"; };
+		7BD801CF202017D800AF3D15 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RazerAUTHSDK.framework; sourceTree = "<group>"; };
+		968C23AE8019C647B821A10D /* Pods-ThirdPartySDKSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPartySDKSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdPartySDKSampleApp/Pods-ThirdPartySDKSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E506BA5507929DB14A1CCF9B /* Pods-ThirdPartySDKSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPartySDKSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdPartySDKSampleApp/Pods-ThirdPartySDKSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BB72E4D2016DD20007075D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0436902043BE49000BD35F /* Crashlytics.framework in Frameworks */,
+				3A4F10808D32DC287C547F38 /* Pods_ThirdPartySDKSampleApp.framework in Frameworks */,
+				7BD5832A204918BA00D1489C /* RazerAUTHSDK.framework in Frameworks */,
+				7B0436912043BE49000BD35F /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB72E612016DD20007075D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB72E6C2016DD20007075D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FAC248FCD6EE08EAD637884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				968C23AE8019C647B821A10D /* Pods-ThirdPartySDKSampleApp.debug.xcconfig */,
+				E506BA5507929DB14A1CCF9B /* Pods-ThirdPartySDKSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BB72E472016DD20007075D7 = {
+			isa = PBXGroup;
+			children = (
+				7B04368E2043BE48000BD35F /* Crashlytics.framework */,
+				7B04368F2043BE49000BD35F /* Fabric.framework */,
+				7BB72E522016DD20007075D7 /* ThirdPartySDKSampleApp */,
+				7BB72E672016DD20007075D7 /* ThirdPartySDKSampleAppTests */,
+				7BB72E722016DD20007075D7 /* ThirdPartySDKSampleAppUITests */,
+				7BB72E512016DD20007075D7 /* Products */,
+				FA349AFB46655BA31CEBA9C0 /* Frameworks */,
+				2FAC248FCD6EE08EAD637884 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7BB72E512016DD20007075D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BB72E502016DD20007075D7 /* ThirdPartySDKSampleApp.app */,
+				7BB72E642016DD20007075D7 /* ThirdPartySDKSampleAppTests.xctest */,
+				7BB72E6F2016DD20007075D7 /* ThirdPartySDKSampleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BB72E522016DD20007075D7 /* ThirdPartySDKSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				7B02AD35202302600085F25A /* ThirdPartySDKSampleApp.entitlements */,
+				7BB72E532016DD20007075D7 /* AppDelegate.swift */,
+				7BB72E552016DD20007075D7 /* ViewController.swift */,
+				7BB72E572016DD20007075D7 /* Main.storyboard */,
+				7BB72E5A2016DD20007075D7 /* Assets.xcassets */,
+				7BB72E5C2016DD20007075D7 /* LaunchScreen.storyboard */,
+				7BB72E5F2016DD20007075D7 /* Info.plist */,
+				7BB72E8B2016FEDA007075D7 /* WebViewController.swift */,
+				7BD801CF202017D800AF3D15 /* DetailViewController.swift */,
+				7B02AD36202306DA0085F25A /* ThirdPartySDKSampleApp-Bridging-Header.h */,
+			);
+			path = ThirdPartySDKSampleApp;
+			sourceTree = "<group>";
+		};
+		7BB72E672016DD20007075D7 /* ThirdPartySDKSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BB72E682016DD20007075D7 /* ThirdPartySDKSampleAppTests.swift */,
+				7BB72E6A2016DD20007075D7 /* Info.plist */,
+			);
+			path = ThirdPartySDKSampleAppTests;
+			sourceTree = "<group>";
+		};
+		7BB72E722016DD20007075D7 /* ThirdPartySDKSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BB72E732016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift */,
+				7BB72E752016DD20007075D7 /* Info.plist */,
+			);
+			path = ThirdPartySDKSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		FA349AFB46655BA31CEBA9C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */,
+				7BBA537F20244A6B00C13BDF /* razerMobileKit.framework */,
+				5C75A65EFDABC33755FBCAAB /* Pods_ThirdPartySDKSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BB72E4F2016DD20007075D7 /* ThirdPartySDKSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB72E782016DD20007075D7 /* Build configuration list for PBXNativeTarget "ThirdPartySDKSampleApp" */;
+			buildPhases = (
+				520B8E2403C4B9DA37BEBFB8 /* [CP] Check Pods Manifest.lock */,
+				7BB72E4C2016DD20007075D7 /* Sources */,
+				7BB72E4D2016DD20007075D7 /* Frameworks */,
+				7BB72E4E2016DD20007075D7 /* Resources */,
+				F04CA08B292DD1E30064375A /* [CP] Embed Pods Frameworks */,
+				B15B256EE4F688FF84669EFC /* [CP] Copy Pods Resources */,
+				7B04368D2043BE13000BD35F /* ShellScript */,
+				7BD5832C204918BA00D1489C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThirdPartySDKSampleApp;
+			productName = ThirdPartySDKSampleApp;
+			productReference = 7BB72E502016DD20007075D7 /* ThirdPartySDKSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BB72E632016DD20007075D7 /* ThirdPartySDKSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB72E7B2016DD20007075D7 /* Build configuration list for PBXNativeTarget "ThirdPartySDKSampleAppTests" */;
+			buildPhases = (
+				7BB72E602016DD20007075D7 /* Sources */,
+				7BB72E612016DD20007075D7 /* Frameworks */,
+				7BB72E622016DD20007075D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB72E662016DD20007075D7 /* PBXTargetDependency */,
+			);
+			name = ThirdPartySDKSampleAppTests;
+			productName = ThirdPartySDKSampleAppTests;
+			productReference = 7BB72E642016DD20007075D7 /* ThirdPartySDKSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BB72E6E2016DD20007075D7 /* ThirdPartySDKSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB72E7E2016DD20007075D7 /* Build configuration list for PBXNativeTarget "ThirdPartySDKSampleAppUITests" */;
+			buildPhases = (
+				7BB72E6B2016DD20007075D7 /* Sources */,
+				7BB72E6C2016DD20007075D7 /* Frameworks */,
+				7BB72E6D2016DD20007075D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB72E712016DD20007075D7 /* PBXTargetDependency */,
+			);
+			name = ThirdPartySDKSampleAppUITests;
+			productName = ThirdPartySDKSampleAppUITests;
+			productReference = 7BB72E6F2016DD20007075D7 /* ThirdPartySDKSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BB72E482016DD20007075D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Umang Davessar";
+				TargetAttributes = {
+					7BB72E4F2016DD20007075D7 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					7BB72E632016DD20007075D7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BB72E4F2016DD20007075D7;
+					};
+					7BB72E6E2016DD20007075D7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BB72E4F2016DD20007075D7;
+					};
+				};
+			};
+			buildConfigurationList = 7BB72E4B2016DD20007075D7 /* Build configuration list for PBXProject "ThirdPartySDKSampleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BB72E472016DD20007075D7;
+			productRefGroup = 7BB72E512016DD20007075D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BB72E4F2016DD20007075D7 /* ThirdPartySDKSampleApp */,
+				7BB72E632016DD20007075D7 /* ThirdPartySDKSampleAppTests */,
+				7BB72E6E2016DD20007075D7 /* ThirdPartySDKSampleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BB72E4E2016DD20007075D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB72E5E2016DD20007075D7 /* LaunchScreen.storyboard in Resources */,
+				7BB72E5B2016DD20007075D7 /* Assets.xcassets in Resources */,
+				7BB72E592016DD20007075D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB72E622016DD20007075D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB72E6D2016DD20007075D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		520B8E2403C4B9DA37BEBFB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B04368D2043BE13000BD35F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a9c70b7afcb0953d7e812aa8a8a1e9085e5847d6 91799e1d2a6c41cce8b2952770de6f9e2856afa3d5ea5c57292b8fb3cb591950";
+		};
+		B15B256EE4F688FF84669EFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThirdPartySDKSampleApp/Pods-ThirdPartySDKSampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04CA08B292DD1E30064375A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThirdPartySDKSampleApp/Pods-ThirdPartySDKSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BB72E4C2016DD20007075D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB72E562016DD20007075D7 /* ViewController.swift in Sources */,
+				7BB72E8C2016FEDA007075D7 /* WebViewController.swift in Sources */,
+				7BB72E542016DD20007075D7 /* AppDelegate.swift in Sources */,
+				7BD801D0202017D800AF3D15 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB72E602016DD20007075D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB72E692016DD20007075D7 /* ThirdPartySDKSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB72E6B2016DD20007075D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB72E742016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BB72E662016DD20007075D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB72E4F2016DD20007075D7 /* ThirdPartySDKSampleApp */;
+			targetProxy = 7BB72E652016DD20007075D7 /* PBXContainerItemProxy */;
+		};
+		7BB72E712016DD20007075D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BB72E4F2016DD20007075D7 /* ThirdPartySDKSampleApp */;
+			targetProxy = 7BB72E702016DD20007075D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BB72E572016DD20007075D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB72E582016DD20007075D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BB72E5C2016DD20007075D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BB72E5D2016DD20007075D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BB72E762016DD20007075D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BB72E772016DD20007075D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BB72E792016DD20007075D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968C23AE8019C647B821A10D /* Pods-ThirdPartySDKSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThirdPartySDKSampleApp/ThirdPartySDKSampleApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 892Z7NATQ7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NVActivityIndicatorView\"",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = ThirdPartySDKSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razerzone.thirdpartysdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThirdPartySDKSampleApp/ThirdPartySDKSampleApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		7BB72E7A2016DD20007075D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E506BA5507929DB14A1CCF9B /* Pods-ThirdPartySDKSampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ThirdPartySDKSampleApp/ThirdPartySDKSampleApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 892Z7NATQ7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/NVActivityIndicatorView\"",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = ThirdPartySDKSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.razerzone.thirdpartysdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThirdPartySDKSampleApp/ThirdPartySDKSampleApp-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		7BB72E7C2016DD20007075D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 892Z7NATQ7;
+				INFOPLIST_FILE = ThirdPartySDKSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razer.ios.appdemo.ThirdPartySDKSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdPartySDKSampleApp.app/ThirdPartySDKSampleApp";
+			};
+			name = Debug;
+		};
+		7BB72E7D2016DD20007075D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 892Z7NATQ7;
+				INFOPLIST_FILE = ThirdPartySDKSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razer.ios.appdemo.ThirdPartySDKSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdPartySDKSampleApp.app/ThirdPartySDKSampleApp";
+			};
+			name = Release;
+		};
+		7BB72E7F2016DD20007075D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 892Z7NATQ7;
+				INFOPLIST_FILE = ThirdPartySDKSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razer.ios.appdemo.ThirdPartySDKSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThirdPartySDKSampleApp;
+			};
+			name = Debug;
+		};
+		7BB72E802016DD20007075D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 892Z7NATQ7;
+				INFOPLIST_FILE = ThirdPartySDKSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razer.ios.appdemo.ThirdPartySDKSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThirdPartySDKSampleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BB72E4B2016DD20007075D7 /* Build configuration list for PBXProject "ThirdPartySDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB72E762016DD20007075D7 /* Debug */,
+				7BB72E772016DD20007075D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB72E782016DD20007075D7 /* Build configuration list for PBXNativeTarget "ThirdPartySDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB72E792016DD20007075D7 /* Debug */,
+				7BB72E7A2016DD20007075D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB72E7B2016DD20007075D7 /* Build configuration list for PBXNativeTarget "ThirdPartySDKSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB72E7C2016DD20007075D7 /* Debug */,
+				7BB72E7D2016DD20007075D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BB72E7E2016DD20007075D7 /* Build configuration list for PBXNativeTarget "ThirdPartySDKSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB72E7F2016DD20007075D7 /* Debug */,
+				7BB72E802016DD20007075D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BB72E482016DD20007075D7 /* Project object */;
+}

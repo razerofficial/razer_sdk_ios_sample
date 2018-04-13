@@ -1,0 +1,17 @@
+PODS:
+  - Alamofire (4.6.0)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+
+PODFILE CHECKSUM: 48efb3c5e75e890efe0a4074b82cca94ffc0f7a4
+
+COCOAPODS: 1.2.1

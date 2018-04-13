@@ -1,0 +1,11 @@
+framework module RazerAUTHSDK {
+  umbrella header "RazerAUTHSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module RazerAUTHSDK.Swift {
+    header "RazerAUTHSDK-Swift.h"
+    requires objc
+}
