@@ -47,6 +47,7 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
      Params Dictionary receives from other app with required details
      */
     var paramValue : Dictionary<String, Any>?
+    var webViewValue : Dictionary<String, Any>?
     /**
      Label to show Aceess Token Value
      */
@@ -97,6 +98,13 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
             
         }
         
+        else if (webViewValue != nil)
+        {
+            lblAceessToken?.text = String(format:"Access Token : %@", webViewValue!["access_token"] as! CVarArg)
+            lblExpiry?.text = String(format:"Expiry : %@", webViewValue!["expires_in"] as! CVarArg)
+            callWebserviceForJSON(accessToken: webViewValue!["access_token"] as! String)
+        }
+        
     }
     
     func convertToDictionary(text: String) -> [String: Any]? {
@@ -130,7 +138,9 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
                     self.lblRazerID?.text = String(format:"Razer ID : %@", dict!["razer_id"] as! CVarArg)
                     self.lbluuid?.text = String(format:"Open ID : %@", dict!["open_id"] as! CVarArg)
                     let imgURL = dict!["avatar"]
+                    if (dict!["avatar"] != nil){
                     self.imgAvatar?.setImageFromURl(stringImageUrl: imgURL as! String)
+                    }
                     self.stopAnimating()
                 }
                 // print(dict) //JSONSerialization
@@ -162,7 +172,7 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
     
     
     /**
-     Logout will delete the webview cookies ad=nd redirect user to main screen
+     Logout will delete the webview cookies and redirect user to main screen
      
      */
     @IBAction func logout()
@@ -175,10 +185,14 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
             // print(cookie.name+"="+cookie.value)
             cookieJar.deleteCookie(cookie)
         }
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-         self.navigationController?.popToRootViewController(animated: false)
+        self.present(vc, animated: true) {
+            
+        }
+        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        // self.navigationController?.popToRootViewController(animated: false)
     }
     
     

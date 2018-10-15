@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3A4F10808D32DC287C547F38 /* Pods_ThirdPartySDKSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75A65EFDABC33755FBCAAB /* Pods_ThirdPartySDKSampleApp.framework */; };
+		7B02AD39202306DC0085F25A /* RzBundleSeedID.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B02AD38202306DB0085F25A /* RzBundleSeedID.m */; };
 		7B0436902043BE49000BD35F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B04368E2043BE48000BD35F /* Crashlytics.framework */; };
 		7B0436912043BE49000BD35F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B04368F2043BE49000BD35F /* Fabric.framework */; };
+		7BB333DE203FF7F5007CA8BD /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB333DD203FF7F5007CA8BD /* TokenManager.swift */; };
 		7BB72E542016DD20007075D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E532016DD20007075D7 /* AppDelegate.swift */; };
 		7BB72E562016DD20007075D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E552016DD20007075D7 /* ViewController.swift */; };
 		7BB72E592016DD20007075D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E572016DD20007075D7 /* Main.storyboard */; };
@@ -17,10 +19,14 @@
 		7BB72E5E2016DD20007075D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E5C2016DD20007075D7 /* LaunchScreen.storyboard */; };
 		7BB72E692016DD20007075D7 /* ThirdPartySDKSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E682016DD20007075D7 /* ThirdPartySDKSampleAppTests.swift */; };
 		7BB72E742016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E732016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift */; };
+		7BB72E822016DE48007075D7 /* deathadder-elite-gaming-mouse-razer-logo-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E812016DE48007075D7 /* deathadder-elite-gaming-mouse-razer-logo-2.jpg */; };
+		7BB72E842016DF2B007075D7 /* rectangle_3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E832016DF2B007075D7 /* rectangle_3.pdf */; };
+		7BB72E8A2016FC6A007075D7 /* Grey-website-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E892016FC6A007075D7 /* Grey-website-background.png */; };
 		7BB72E8C2016FEDA007075D7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB72E8B2016FEDA007075D7 /* WebViewController.swift */; };
-		7BD5832A204918BA00D1489C /* RazerAUTHSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */; };
-		7BD5832B204918BA00D1489C /* RazerAUTHSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BB72E9020170123007075D7 /* Razer-Logo-PNG-Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BB72E8F20170123007075D7 /* Razer-Logo-PNG-Image.png */; };
+		7BBA538220244DB200C13BDF /* RzMobileKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BBA538120244DB200C13BDF /* RzMobileKit.plist */; };
 		7BD801D0202017D800AF3D15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD801CF202017D800AF3D15 /* DetailViewController.swift */; };
+		7BD801D220206D0300AF3D15 /* single_n0avatar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD801D120206D0300AF3D15 /* single_n0avatar.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,26 +46,15 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7BD5832C204918BA00D1489C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7BD5832B204918BA00D1489C /* RazerAUTHSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		5C75A65EFDABC33755FBCAAB /* Pods_ThirdPartySDKSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThirdPartySDKSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B02AD35202302600085F25A /* ThirdPartySDKSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThirdPartySDKSampleApp.entitlements; sourceTree = "<group>"; };
 		7B02AD36202306DA0085F25A /* ThirdPartySDKSampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThirdPartySDKSampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B02AD37202306DB0085F25A /* RzBundleSeedID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RzBundleSeedID.h; sourceTree = "<group>"; };
+		7B02AD38202306DB0085F25A /* RzBundleSeedID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RzBundleSeedID.m; sourceTree = "<group>"; };
 		7B04368E2043BE48000BD35F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		7B04368F2043BE49000BD35F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		7BB333DD203FF7F5007CA8BD /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		7BB72E502016DD20007075D7 /* ThirdPartySDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdPartySDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB72E532016DD20007075D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB72E552016DD20007075D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,10 +68,15 @@
 		7BB72E6F2016DD20007075D7 /* ThirdPartySDKSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartySDKSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB72E732016DD20007075D7 /* ThirdPartySDKSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartySDKSampleAppUITests.swift; sourceTree = "<group>"; };
 		7BB72E752016DD20007075D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB72E812016DE48007075D7 /* deathadder-elite-gaming-mouse-razer-logo-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "deathadder-elite-gaming-mouse-razer-logo-2.jpg"; sourceTree = "<group>"; };
+		7BB72E832016DF2B007075D7 /* rectangle_3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = rectangle_3.pdf; sourceTree = "<group>"; };
+		7BB72E892016FC6A007075D7 /* Grey-website-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grey-website-background.png"; sourceTree = "<group>"; };
 		7BB72E8B2016FEDA007075D7 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7BB72E8F20170123007075D7 /* Razer-Logo-PNG-Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Razer-Logo-PNG-Image.png"; sourceTree = "<group>"; };
 		7BBA537F20244A6B00C13BDF /* razerMobileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = razerMobileKit.framework; path = Pods/mobilekit/mobilekit/razerMobileKit.framework; sourceTree = "<group>"; };
+		7BBA538120244DB200C13BDF /* RzMobileKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RzMobileKit.plist; sourceTree = "<group>"; };
 		7BD801CF202017D800AF3D15 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RazerAUTHSDK.framework; sourceTree = "<group>"; };
+		7BD801D120206D0300AF3D15 /* single_n0avatar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = single_n0avatar.pdf; sourceTree = "<group>"; };
 		968C23AE8019C647B821A10D /* Pods-ThirdPartySDKSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPartySDKSampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdPartySDKSampleApp/Pods-ThirdPartySDKSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E506BA5507929DB14A1CCF9B /* Pods-ThirdPartySDKSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPartySDKSampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdPartySDKSampleApp/Pods-ThirdPartySDKSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +88,6 @@
 			files = (
 				7B0436902043BE49000BD35F /* Crashlytics.framework in Frameworks */,
 				3A4F10808D32DC287C547F38 /* Pods_ThirdPartySDKSampleApp.framework in Frameworks */,
-				7BD5832A204918BA00D1489C /* RazerAUTHSDK.framework in Frameworks */,
 				7B0436912043BE49000BD35F /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +145,16 @@
 		7BB72E522016DD20007075D7 /* ThirdPartySDKSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				7BB333DD203FF7F5007CA8BD /* TokenManager.swift */,
+				7BBA538120244DB200C13BDF /* RzMobileKit.plist */,
+				7B02AD37202306DB0085F25A /* RzBundleSeedID.h */,
+				7B02AD38202306DB0085F25A /* RzBundleSeedID.m */,
 				7B02AD35202302600085F25A /* ThirdPartySDKSampleApp.entitlements */,
+				7BD801D120206D0300AF3D15 /* single_n0avatar.pdf */,
+				7BB72E8F20170123007075D7 /* Razer-Logo-PNG-Image.png */,
+				7BB72E892016FC6A007075D7 /* Grey-website-background.png */,
+				7BB72E832016DF2B007075D7 /* rectangle_3.pdf */,
+				7BB72E812016DE48007075D7 /* deathadder-elite-gaming-mouse-razer-logo-2.jpg */,
 				7BB72E532016DD20007075D7 /* AppDelegate.swift */,
 				7BB72E552016DD20007075D7 /* ViewController.swift */,
 				7BB72E572016DD20007075D7 /* Main.storyboard */,
@@ -181,7 +189,6 @@
 		FA349AFB46655BA31CEBA9C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7BFEB05020480F8600E1107D /* RazerAUTHSDK.framework */,
 				7BBA537F20244A6B00C13BDF /* razerMobileKit.framework */,
 				5C75A65EFDABC33755FBCAAB /* Pods_ThirdPartySDKSampleApp.framework */,
 			);
@@ -202,7 +209,6 @@
 				F04CA08B292DD1E30064375A /* [CP] Embed Pods Frameworks */,
 				B15B256EE4F688FF84669EFC /* [CP] Copy Pods Resources */,
 				7B04368D2043BE13000BD35F /* ShellScript */,
-				7BD5832C204918BA00D1489C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,9 +312,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB72E9020170123007075D7 /* Razer-Logo-PNG-Image.png in Resources */,
+				7BD801D220206D0300AF3D15 /* single_n0avatar.pdf in Resources */,
+				7BB72E8A2016FC6A007075D7 /* Grey-website-background.png in Resources */,
 				7BB72E5E2016DD20007075D7 /* LaunchScreen.storyboard in Resources */,
 				7BB72E5B2016DD20007075D7 /* Assets.xcassets in Resources */,
 				7BB72E592016DD20007075D7 /* Main.storyboard in Resources */,
+				7BB72E822016DE48007075D7 /* deathadder-elite-gaming-mouse-razer-logo-2.jpg in Resources */,
+				7BBA538220244DB200C13BDF /* RzMobileKit.plist in Resources */,
+				7BB72E842016DF2B007075D7 /* rectangle_3.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +409,9 @@
 				7BB72E562016DD20007075D7 /* ViewController.swift in Sources */,
 				7BB72E8C2016FEDA007075D7 /* WebViewController.swift in Sources */,
 				7BB72E542016DD20007075D7 /* AppDelegate.swift in Sources */,
+				7B02AD39202306DC0085F25A /* RzBundleSeedID.m in Sources */,
 				7BD801D0202017D800AF3D15 /* DetailViewController.swift in Sources */,
+				7BB333DE203FF7F5007CA8BD /* TokenManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ThirdPartySDKSampleApp/ThirdPartySDKSampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 892Z7NATQ7;
@@ -607,6 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ThirdPartySDKSampleApp/ThirdPartySDKSampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 892Z7NATQ7;

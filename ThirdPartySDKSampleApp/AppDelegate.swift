@@ -9,7 +9,6 @@
 import UIKit
 import Fabric
 import Crashlytics
-import RazerAUTHSDK
 
 
 @UIApplicationMain
@@ -19,7 +18,7 @@ import RazerAUTHSDK
  */
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-     let callBackManager = RzLoginView()
+
     var window: UIWindow?
 
     /**
@@ -28,8 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Fabric.with([Crashlytics.self])
-        callBackManager.setup(isDebug: true)
-        callBackManager.YPrint(value: "Working fine…")
+
         return true
     }
     
@@ -48,46 +46,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool
     {
-        callBackManager.application(url: url, { (params) in
-      
-                let params = NSMutableDictionary()
-                let kvPairs : [String] = (url.query?.components(separatedBy: "&"))!
-                for param in  kvPairs{
-                    let keyValuePair : Array = param.components(separatedBy: "=")
-                    if keyValuePair.count == 2{
-                        params.setObject(keyValuePair.last!, forKey: keyValuePair.first! as NSCopying)
-                    }
-                }
-                
-                /**
-                 After Authorize and receive the data from other app, user will redirect to Detail View Screen.
-                 */
-                
-            if (params["accesstoken"] != nil)
-            {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-                    vc.paramValue = params as! Dictionary<String, Any>
-                    self.window?.rootViewController = vc
-                    self.window?.makeKeyAndVisible()
-            }
-                print(params)
-            
-            
-        }) { (error) in
-            
-            /**
-             After Deny authorization from other app, user will redirect to Main Login View.
-             */
+        /**
+         After Deny authorization from other app, user will redirect to Main Login View.
+         */
+        if url.absoluteString == "tpdemo://"
+        {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
             vc.messageAppDeny = "Sorry ,Request Denied. Please sign in to login again. "
             self.window?.rootViewController = vc
             self.window?.makeKeyAndVisible()
         }
-        return true
+        else
+        {
+        let params = NSMutableDictionary()
+        let kvPairs : [String] = (url.query?.components(separatedBy: "&"))!
+        for param in  kvPairs{
+            let keyValuePair : Array = param.components(separatedBy: "=")
+            if keyValuePair.count == 2{
+                params.setObject(keyValuePair.last!, forKey: keyValuePair.first! as NSCopying)
+            }
+        }
         
-       
+            /**
+            After Authorize and receive the data from other app, user will redirect to Detail View Screen.
+             */
+        if (params["accesstoken"] != nil)
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            vc.paramValue = params as! Dictionary<String, Any>
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+        }
+        print(params)
+        }
+        return true
         
     }
     
@@ -111,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
+    
     
     /**
      

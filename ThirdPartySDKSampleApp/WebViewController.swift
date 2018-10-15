@@ -83,7 +83,15 @@ class WebViewController: UIViewController,WKNavigationDelegate, WKUIDelegate,WKS
          - Refresh Token
         
          */
-        let requesturl = URL(string: "https://oauth2-staging.razerapi.com/authorize_new?response_type=id_token+token&scope=openid+profile+email&client_id=openidstaging&state=af0ifjsldkj&redirect_uri=http://54.205.51.49/callback&nonce=n-0S6_WzA2Mj")
+        
+        // old URL : https://oauth2-staging.razerapi.com/authorize_new?response_type=id_token+token&scope=openid+profile+email&client_id=openidstaging&state=af0ifjsldkj&redirect_uri=http://54.205.51.49/callback&nonce=n-0S6_WzA2Mj
+        
+        
+        //e8a995fd9a0c54e9003530379204f90e8bf6f7e6
+        //bb403a03ecc3eb594fe619c6baaf7352bbb58ac4
+        
+        let requesturl = URL(string: "https://oauth2-staging.razersynapse.com/authorize_openid?response_type=id_token%20token&scope=openid%20profile%20email%20address%20phone&client_id=e8a995fd9a0c54e9003530379204f90e8bf6f7e6&state=3139808908556535759&redirect_uri=http%3A%2F%2F34.205.156.206%2Fcallback&nonce=1539251887101&client_secret=bb403a03ecc3eb594fe619c6baaf7352bbb58ac4")
+        
         var request = URLRequest(url: requesturl!)
         request.httpShouldHandleCookies = true
         //let headers = HTTPCookie.requestHeaderFields(with: [(cookie)!])
@@ -133,12 +141,35 @@ class WebViewController: UIViewController,WKNavigationDelegate, WKUIDelegate,WKS
         if(webView.url?.absoluteString.range(of: "access_token")) != nil {
             print("Navigation occurs")
            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-            vc.strAccessToken = webView.url?.absoluteString
-            UserDefaults.standard.set(webView.url?.absoluteString, forKey: "token")
-            UserDefaults.standard.synchronize()
-            self.navigationController?.pushViewController(vc, animated: true)
+            
+            
+            let regCode:String = (webView.url?.absoluteString.components(separatedBy: "/").last?.components(separatedBy: "#").last)!
+            
+            let params = NSMutableDictionary()
+            let kvPairs : [String] = (regCode.components(separatedBy: "&"))
+            for param in  kvPairs{
+                let keyValuePair : Array = param.components(separatedBy: "=")
+                if keyValuePair.count == 2{
+                    params.setObject(keyValuePair.last!, forKey: keyValuePair.first! as NSCopying)
+                }
+            }
+            
+            /**
+             After Authorize and receive the data from other app, user will redirect to Detail View Screen.
+             */
+            if (params["access_token"] != nil)
+            {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+                vc.webViewValue = params as? Dictionary<String, Any>
+                UserDefaults.standard.set(params["access_token"], forKey: "token")
+                UserDefaults.standard.synchronize()
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            print(params)
+
+            
         }
         
         if(webView.url?.absoluteString.range(of: "error")) != nil {

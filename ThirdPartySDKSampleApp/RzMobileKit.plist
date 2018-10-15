@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANALYTICS_IDENTITY_POOL_ID</key>
+	<string>us-east-1:a2b77dd3-0217-4e84-b32e-7f25af396363</string>
+	<key>ANALYTICS_APP_ID</key>
+	<string>b0cb29ca617845c2881fae3ac277f10d</string>
+	<key>DISCLAIMER_TEXT</key>
+	<string>By creating an account, I acknowledge that I understand and agree to the Razer Terms of Service and Privacy Policy.</string>
+	<key>ACCOUNT_CREATE_DISCLAIMER_TEXT</key>
+	<string>By signing up and creating a Razer ID account, I acknowledge that I am at least 13 years of age and that I understand and agree to the razer Terms of Service and Privacy Policy.</string>
+	<key>ABOUT_TEXT</key>
+	<string>Copyright © 2018   Razer Inc.
+All Rights Reserved.
+        
+    Terms of Service | Privacy Policy
+        
+    Open Source Software Notice
+    </string>
+	<key>ALLOW_GUEST_LOGIN</key>
+	<true/>
+	<key>SSI_ENABLED</key>
+	<false/>
+	<key>LOG_LEVEL</key>
+	<integer>0</integer>
+	<key>USE_STAGING</key>
+	<true/>
+	<key>FACEBOOK_APP_ID</key>
+	<string>965511933493262</string>
+	<key>FACEBOOK_APP_ID_STAGING</key>
+	<string>444268682363510</string>
+	<key>ALTERNATE_APP_ICON</key>
+	<string>group</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>669369460478-b956tohcdf56eop9odh1jf3h32c0u0sk.apps.googleusercontent.com</string>
+	<key>TWICH_APP_ID</key>
+	<string>4j28c2znix5au9qzuy683wip0xksv5h</string>
+	<key>TWITCH_REDIRECT_URL_ID_PARAM</key>
+	<string>razer-id.razerzone.com</string>
+	<key>TWITCH_REDIRECT_URL_SCHEME</key>
+	<string>rzoauthredirecturl</string>
+	<key>QQ_APP_ID</key>
+	<string>101325417</string>
+	<key>SYNAPSE_SERVICE_CODE</key>
+	<string>0420</string>
+	<key>SYNAPSE_ENDPOINT</key>
+	<string>https://ec.razerzone.com/7/</string>
+	<key>SYNAPSE_ACCOUNT_VERIFICATION_ENDPOINT</key>
+	<string>https://ec.razerzone.com/5/</string>
+	<key>OAUTH_ENDPOINT</key>
+	<string>https://oauth2.razerzone.com/</string>
+	<key>APP_CONFIG_ENDPOINT</key>
+	<string>https://fs.razersynapse.com/</string>
+	<key>APP_CONFIG_QUERY_INTERVAL_HOURS</key>
+	<integer>24</integer>
+	<key>APP_FEEDBACK_ENDPOINT</key>
+	<string>https://feedback.razersynapse.com/</string>
+	<key>SYNAPSE_APP_ID</key>
+	<string>nabu_utility</string>
+	<key>SYNAPSE_SCOPE</key>
+	<array>
+		<string>cop</string>
+		<string>fitness</string>
+	</array>
+	<key>TERMS_OF_SERVICE_URL</key>
+	<string>https://www.razerzone.com/sg-en/terms-conditions</string>
+	<key>PRIVACY_POLICY_URL</key>
+	<string>https://www.razerzone.com/sg-en/privacy-policy</string>
+	<key>SYNAPSE_ENDPOINT_STAGING</key>
+	<string>https://ec-staging.razerzone.com/7/</string>
+	<key>SYNAPSE_ACCOUNT_VERIFICATION_ENDPOINT_STAGING</key>
+	<string>https://ec-staging.razerzone.com/5/</string>
+	<key>OAUTH_ENDPOINT_STAGING</key>
+	<string>https://oauth2-staging.razerapi.com/</string>
+	<key>APP_CONFIG_ENDPOINT_STAGING</key>
+	<string>https://fs.razersynapse.com/</string>
+	<key>TWICH_APP_ID_STAGING</key>
+	<string>l1wr9o819ipfbjdmxum9jjlol507ejo</string>
+	<key>TWITCH_REDIRECT_URL_ID_PARAM_STAGING</key>
+	<string>razer-id-dev.razerzone.com</string>
+	<key>TWITCH_REDIRECT_URL_SCHEME_STAGING</key>
+	<string>rzoauthredirecturl</string>
+</dict>
+</plist>
