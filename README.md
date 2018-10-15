@@ -10,5 +10,3 @@ User Sign Up
 
 Razer ID provides a quick and convenient way to allow user to go onboard your Apps without the need to set a password. User can log into your App with a single click on the supported platforms. With this API, you will also be able to reach the user through their verified email or phone.
  
-Download the RazerAUTHSDK.framework from this Repo and add in your App. 
-Download the ThirdPartySDKSampleApp from this Repo for implemenation Guide.
