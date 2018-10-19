@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grey-website-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="bKy-gf-FWr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grey-website-background" translatesAutoresizingMaskIntoConstraints="NO" id="bKy-gf-FWr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krj-Nv-ZDm">
@@ -53,7 +53,7 @@
                                     <action selector="btnLoginClickWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1Z-fi-I7p"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Razer-Logo-PNG-Image.png" translatesAutoresizingMaskIntoConstraints="NO" id="1nZ-jS-hhz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Razer-Logo-PNG-Image" translatesAutoresizingMaskIntoConstraints="NO" id="1nZ-jS-hhz">
                                 <rect key="frame" x="89" y="48" width="197" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="UE7-pT-JsH"/>
@@ -97,21 +97,6 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--Web View Controller-->
-        <scene sceneID="xAb-hZ-aQ3">
-            <objects>
-                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6md-9j-q93" customClass="WebViewController" customModule="ThirdPartySDKSampleApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="z8l-uf-RKg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="zbP-Sg-JuK"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpa-KC-PjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="848.79999999999995" y="131.78410794602701"/>
-        </scene>
         <!--Detail View Controller-->
         <scene sceneID="6Ij-BI-VQA">
             <objects>
@@ -120,7 +105,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grey-website-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="GhC-Su-Ffs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grey-website-background" translatesAutoresizingMaskIntoConstraints="NO" id="GhC-Su-Ffs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKi-Xa-pS5">
@@ -158,7 +143,7 @@
                                 <rect key="frame" x="13" y="353" width="348" height="107"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Razer ID :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r58-W2-aX6">
-                                        <rect key="frame" x="14" y="14" width="319" height="31"/>
+                                        <rect key="frame" x="14" y="29" width="319" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="X2I-ea-TXF"/>
                                         </constraints>
@@ -167,7 +152,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open ID:" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhL-aQ-bWy">
-                                        <rect key="frame" x="14" y="50" width="319" height="17"/>
+                                        <rect key="frame" x="14" y="65" width="319" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -175,12 +160,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="xhL-aQ-bWy" firstAttribute="bottom" secondItem="dRZ-QE-wJk" secondAttribute="bottomMargin" constant="-32" id="6iy-m1-bmt"/>
+                                    <constraint firstItem="r58-W2-aX6" firstAttribute="centerX" secondItem="dRZ-QE-wJk" secondAttribute="centerX" id="5BI-cm-nOw"/>
+                                    <constraint firstItem="xhL-aQ-bWy" firstAttribute="bottom" secondItem="dRZ-QE-wJk" secondAttribute="bottomMargin" constant="-17" id="6iy-m1-bmt"/>
                                     <constraint firstItem="r58-W2-aX6" firstAttribute="leading" secondItem="xhL-aQ-bWy" secondAttribute="leading" id="IQa-Nk-fJB"/>
-                                    <constraint firstItem="r58-W2-aX6" firstAttribute="centerX" secondItem="dRZ-QE-wJk" secondAttribute="centerX" id="S4U-G4-SBt"/>
                                     <constraint firstAttribute="height" constant="107" id="eq9-43-kOI"/>
                                     <constraint firstItem="r58-W2-aX6" firstAttribute="trailing" secondItem="xhL-aQ-bWy" secondAttribute="trailing" id="g67-cd-tOq"/>
-                                    <constraint firstItem="r58-W2-aX6" firstAttribute="leading" secondItem="dRZ-QE-wJk" secondAttribute="leading" constant="14" id="kFY-m4-M5i"/>
+                                    <constraint firstItem="r58-W2-aX6" firstAttribute="leading" secondItem="dRZ-QE-wJk" secondAttribute="leading" constant="14" id="koX-hC-imh"/>
                                     <constraint firstItem="xhL-aQ-bWy" firstAttribute="top" secondItem="r58-W2-aX6" secondAttribute="bottom" constant="5" id="p4V-1s-kKa"/>
                                 </constraints>
                             </view>
@@ -192,8 +177,9 @@
                                     <constraint firstAttribute="height" constant="128" id="uZC-Iy-5IE"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ2-EE-ou8">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ2-EE-ou8">
                                 <rect key="frame" x="72" y="547" width="230" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="LOGOUT"/>
                                 <connections>
@@ -203,8 +189,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2yL-8z-Zcc" firstAttribute="bottom" secondItem="YQ2-EE-ou8" secondAttribute="bottom" constant="72" id="0Fi-hO-woI"/>
-                            <constraint firstItem="YQ2-EE-ou8" firstAttribute="top" secondItem="dRZ-QE-wJk" secondAttribute="bottom" constant="87" id="1N8-7d-4j7"/>
                             <constraint firstItem="GhC-Su-Ffs" firstAttribute="leading" secondItem="Gid-to-BYC" secondAttribute="leading" id="1v4-Je-MC3"/>
                             <constraint firstItem="bDE-H7-zBj" firstAttribute="top" secondItem="2yL-8z-Zcc" secondAttribute="top" constant="59" id="G1j-rr-MCH"/>
                             <constraint firstItem="GhC-Su-Ffs" firstAttribute="centerX" secondItem="dRZ-QE-wJk" secondAttribute="centerX" id="I9l-6m-dZL"/>
@@ -216,9 +200,7 @@
                             <constraint firstItem="GhC-Su-Ffs" firstAttribute="top" secondItem="Gid-to-BYC" secondAttribute="top" id="XPw-Rk-qRW"/>
                             <constraint firstItem="bDE-H7-zBj" firstAttribute="centerX" secondItem="xKi-Xa-pS5" secondAttribute="centerX" id="a8C-p9-bwK"/>
                             <constraint firstAttribute="trailing" secondItem="GhC-Su-Ffs" secondAttribute="trailing" id="haX-5X-WID"/>
-                            <constraint firstItem="YQ2-EE-ou8" firstAttribute="centerX" secondItem="dRZ-QE-wJk" secondAttribute="centerX" id="ooD-kV-7dV"/>
                             <constraint firstItem="xKi-Xa-pS5" firstAttribute="leading" secondItem="2yL-8z-Zcc" secondAttribute="leading" constant="13" id="s1X-er-2qz"/>
-                            <constraint firstItem="YQ2-EE-ou8" firstAttribute="leading" secondItem="2yL-8z-Zcc" secondAttribute="leading" constant="72" id="uH5-hW-woy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2yL-8z-Zcc"/>
                     </view>
@@ -312,8 +294,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Grey-website-background" width="640" height="400"/>
         <image name="Grey-website-background.png" width="640" height="400"/>
-        <image name="Razer-Logo-PNG-Image.png" width="600" height="140"/>
+        <image name="Razer-Logo-PNG-Image" width="600" height="140"/>
         <image name="avatar" width="53" height="67"/>
     </resources>
 </document>

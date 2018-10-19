@@ -11,12 +11,9 @@ import Security
 import NVActivityIndicatorView
 import Foundation
 import Alamofire
+import RazerAUTHSDK
 
-extension String {
-    func removingWhitespaces() -> String {
-        return components(separatedBy: .whitespaces).joined()
-    }
-}
+
 /**
 This class is designed and implemented to Login with Third Party SDK.
  */
@@ -41,7 +38,7 @@ class ViewController: UIViewController,NVActivityIndicatorViewable {
      */
     @IBOutlet var btnLogin : UIButton?
     
-    
+    let rzAuthSDK = RzLoginView()
     /**
     Set Up Navigation Bar for the View Controller
      */
@@ -63,7 +60,6 @@ class ViewController: UIViewController,NVActivityIndicatorViewable {
          setupNavigationBar()
     }
     
-
     /**
      Called after the controller's view is loaded into memory.
      This method is called after the view controller has loaded its view hierarchy into memory. This method is called regardless of whether the view hierarchy was loaded from a nib file or created programmatically in the loadView() method. You usually override this method to perform additional initialization on views that were loaded from nib files.
@@ -98,67 +94,34 @@ class ViewController: UIViewController,NVActivityIndicatorViewable {
     @IBAction func btnLoginClick(_sender: UIButton)
     {
         messageAppDeny = ""
-        getClientInfo()
+        let appURLScheme = "rzmobilekitdemo://?ThirdPartySDK"
         
-    }
-    
-    
-    
-    func getClientInfo()
-    {
-        //     "https://oauth2-staging.razerapi.com/clientinfo?client_id=openidstaging&client_secret=openidpasswdstaging&scope=openid+profile&locale=en"
-        //e8a995fd9a0c54e9003530379204f90e8bf6f7e6
-        //bb403a03ecc3eb594fe619c6baaf7352bbb58ac4
-        
-        Alamofire.request("https://oauth2-staging.razersynapse.com/clientinfo?client_id=e8a995fd9a0c54e9003530379204f90e8bf6f7e6&client_secret=bb403a03ecc3eb594fe619c6baaf7352bbb58ac4&scope=openid+profile&locale=en", method: .get, parameters: ["":""], encoding: URLEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
-            
-            switch(response.result) {
-            case .success(_):
-                if let data = response.result.value {
-                    
-                    let dict = data as! NSDictionary
-                    print(dict)
-                    
-                    let Urlstring = String(format:"rzmobilekitdemo://?clientid=%@&clientname=%@&clientlogo=%@&scope=%@",dict["client_id"]as! String,dict["client_name"]as! String,dict["client_logo"]as! String, "Profile")
-                    
-                    let appURLScheme = Urlstring .removingWhitespaces()
-
-                    //dict["scope"]as! [String : AnyObject]
-                    
-                    
-                    guard let appURL = URL(string: appURLScheme) else {
-                        return
-                    }
-                    
-                    if UIApplication.shared.canOpenURL(appURL) {
-                        
-                        if #available(iOS 10.0, *) {
-                            UIApplication.shared.open(appURL)
-                        }
-                        else {
-                            UIApplication.shared.openURL(appURL)
-                        }
-                    }
-                    else {
-                        // Here you can handle the case when your other application cannot be opened for any reason.
-                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                        let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-                        //self.present(vc, animated: false, completion: nil)
-                        self.navigationController?.pushViewController(vc, animated: true)
-                    }
-                    
-                    
-                }
-                break
-                
-            case .failure(_):
-                print(response.result.error)
-                break
-                
+        rzAuthSDK.loginRazerID(urlScheme: appURLScheme, clientID: "5fd0106be31fd6bf41b991c9cf6b1f8936e0b6cb", clientSecret: "f53a4b41cf0bb68672e986cab811e7110609ccba", scope: "openid+profile", { (accessToken) in
+            print("access::%@",accessToken)
+            if (accessToken != nil)
+            {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+                vc.strAccessToken = accessToken
+                self.navigationController?.pushViewController(vc, animated: true)
             }
+            else
+            {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+           
+        }, {
+            
+        }) { (error) in
+            print(error.debugDescription)
         }
+        
+        
     }
-
+    
     /**
      
      Sent to the view controller when the app receives a memory warning.

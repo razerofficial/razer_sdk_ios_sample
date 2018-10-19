@@ -34,11 +34,11 @@ extension UIImageView{
  This class is designed and implemented to show the Active user's detail (Razer ID, Open ID, Avatar, Email, Acees token and Expiry).
  
  After Authorize from other app, user will come to this screen
-
+ 
  */
 
 class DetailViewController: UIViewController,NVActivityIndicatorViewable {
-
+    
     /**
      Access Token receives from Demo App
      */
@@ -97,12 +97,24 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
             
             
         }
-        
+            
         else if (webViewValue != nil)
         {
             lblAceessToken?.text = String(format:"Access Token : %@", webViewValue!["access_token"] as! CVarArg)
             lblExpiry?.text = String(format:"Expiry : %@", webViewValue!["expires_in"] as! CVarArg)
             callWebserviceForJSON(accessToken: webViewValue!["access_token"] as! String)
+        }
+        
+        else if (strAccessToken != nil || strAccessToken != "")
+        {
+            lblAceessToken?.text = String(format:"Access Token : %@", strAccessToken!)
+            lblExpiry?.text = String(format:"Expiry : %@", "3600")
+            callWebserviceForJSON(accessToken: strAccessToken!)
+        }
+        
+        else
+        {
+            
         }
         
     }
@@ -134,12 +146,16 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
                 let dict = self.convertToDictionary(text: string!)
                 DispatchQueue.main.async {
                     // Update UI
-                    self.lblEmail?.text = String(format:"Nickname : %@", dict!["nickname"] as! CVarArg)
+                    //self.lblEmail?.text = String(format:"Nickname : %@", dict!["nickname"] as! CVarArg)
                     self.lblRazerID?.text = String(format:"Razer ID : %@", dict!["razer_id"] as! CVarArg)
                     self.lbluuid?.text = String(format:"Open ID : %@", dict!["open_id"] as! CVarArg)
                     let imgURL = dict!["avatar"]
-                    if (dict!["avatar"] != nil){
-                    self.imgAvatar?.setImageFromURl(stringImageUrl: imgURL as! String)
+                    if (dict!["avatar"] == nil || dict!["avatar"]! is NSNull){
+                        
+                    }
+                    else
+                    {
+                        self.imgAvatar?.setImageFromURl(stringImageUrl: imgURL as! String)
                     }
                     self.stopAnimating()
                 }
@@ -157,7 +173,7 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
     }
     
     /**
-      Set up of navigation bar
+     Set up of navigation bar
      
      */
     
@@ -196,5 +212,5 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
     }
     
     
-    
 }
+
