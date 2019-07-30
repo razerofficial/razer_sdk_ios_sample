@@ -9,8 +9,8 @@ target 'ThirdPartySDKSampleApp' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
- pod 'NVActivityIndicatorView'
- pod 'Alamofire'
+ pod 'NVActivityIndicatorView','4.4.0'
+ pod 'Alamofire','4.5.1'
 #pod 'SDWebImage'
     #pod 'SwiftKeychainWrapper'
 

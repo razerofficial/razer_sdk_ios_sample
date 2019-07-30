@@ -1,17 +1,22 @@
 PODS:
-  - Alamofire (4.6.0)
-  - NVActivityIndicatorView (4.1.1):
-    - NVActivityIndicatorView/Presenter (= 4.1.1)
-  - NVActivityIndicatorView/Presenter (4.1.1)
+  - Alamofire (4.5.1)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
 
 DEPENDENCIES:
-  - Alamofire
-  - NVActivityIndicatorView
+  - Alamofire (= 4.5.1)
+  - NVActivityIndicatorView (= 4.4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
-  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
 
-PODFILE CHECKSUM: 48efb3c5e75e890efe0a4074b82cca94ffc0f7a4
+PODFILE CHECKSUM: ff5d5d84ac00c6ac78d76c662ea2af7c064a0715
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.7.2

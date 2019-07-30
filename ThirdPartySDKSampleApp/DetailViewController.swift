@@ -133,7 +133,7 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
     func callWebserviceForJSON(accessToken : String)
     {
         startAnimating(CGSize(width: 30, height: 30), message: "Fetching data...", type: NVActivityIndicatorType(rawValue: NVActivityIndicatorType.ballClipRotate.rawValue))
-        let urlString = "https://oauth2-staging.razerapi.com/userinfo"
+        let urlString = "https://oauth2.razer.com/userinfo"
         guard let requestUrl = URL(string:urlString) else { return }
         var request = URLRequest(url:requestUrl)
         let authorizationKey = "Bearer ".appending(accessToken)
