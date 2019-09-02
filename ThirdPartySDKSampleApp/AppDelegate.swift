@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /**
      Tells the delegate that the launch process is almost done and the app is almost ready to run.
      */
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Fabric.with([Crashlytics.self])
         callBackManager.setup(isDebug: true)
@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      */
     
     @available(iOS 9.0, *)
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool
     {
         callBackManager.application(url: url, { (params) in
       
