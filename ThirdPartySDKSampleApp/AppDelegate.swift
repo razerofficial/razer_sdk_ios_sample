@@ -59,8 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
                 
-                /**
-                 After Authorize and receive the data from other app, user will redirect to Detail View Screen.
+                 /**
+                    After Authorize and receive the data from other app, user will redirect to Detail View Screen.
                  */
                 
             if (params["accesstoken"] != nil)

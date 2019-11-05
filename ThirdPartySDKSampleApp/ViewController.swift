@@ -94,14 +94,16 @@ class ViewController: UIViewController,NVActivityIndicatorViewable {
     @IBAction func btnLoginClick(_sender: UIButton)
     {
         messageAppDeny = ""
-        let appURLScheme = "rzmobilekitdemo://?ThirdPartySDK"
+        //let appURLScheme = "rzmobilekitdemo://?ThirdPartySDK"
         
-        
-       // https://oauth2.razer.com/clientinfo?client_id=5fd0106be31fd6bf41b991c9cf6b1f8936e0b6cb&client_secret=f53a4b41cf0bb68672e986cab811e7110609ccba&scope=openid+profile&locale=en
+        let appURLScheme = "rzmobilekitdemo://?3GoPlay"
+       //https://oauth2.razer.com/clientinfo?client_id=5fd0106be31fd6bf41b991c9cf6b1f8936e0b6cb&client_secret=f53a4b41cf0bb68672e986cab811e7110609ccba&scope=openid+profile&locale=en
         
         //4393c97fdc97b8fcf30092df8eb5e3afd259b0fa
         //5e4eca2809aef4647f87688d49a8e5f97e29c4c0
-        rzAuthSDK.loginRazerID(urlScheme: appURLScheme, clientID: "4393c97fdc97b8fcf30092df8eb5e3afd259b0fa", clientSecret: "5e4eca2809aef4647f87688d49a8e5f97e29c4c0", scope: "openid+profile", { (accessToken) in
+        
+        
+        rzAuthSDK.loginRazerID(urlScheme: appURLScheme, clientID: "2a4e2f04f25406895e4941282d113dd64df1e7f1", clientSecret: "f3dee2a4354beea06711d77a7f1e58caec8949a1", scope: "openid+profile+email+phone+address", { (accessToken) in
             print("access::%@",accessToken)
             if (accessToken != nil)
             {
