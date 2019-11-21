@@ -20,7 +20,7 @@ import RazerAUTHSDK
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
      let callBackManager = RzLoginView()
-    var window: UIWindow?
+     var window: UIWindow?
 
     /**
      Tells the delegate that the launch process is almost done and the app is almost ready to run.
