@@ -147,7 +147,7 @@ class DetailViewController: UIViewController,NVActivityIndicatorViewable {
                 DispatchQueue.main.async {
                     // Update UI
                     //self.lblEmail?.text = String(format:"Nickname : %@", dict!["nickname"] as! CVarArg)
-                    self.lblRazerID?.text = String(format:"Razer ID : %@", dict!["razer_id"] as! CVarArg)
+                    self.lblRazerID?.text = "Reterived but Not displayed"//String(format:"Razer ID : %@", dict!["razer_id"] as! CVarArg)
                     self.lbluuid?.text = String(format:"Open ID : %@", dict!["open_id"] as! CVarArg)
                     let imgURL = dict!["avatar"]
                     if (dict!["avatar"] == nil || dict!["avatar"]! is NSNull){
