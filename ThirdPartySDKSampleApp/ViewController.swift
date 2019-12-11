@@ -103,7 +103,8 @@ class ViewController: UIViewController,NVActivityIndicatorViewable {
         //5e4eca2809aef4647f87688d49a8e5f97e29c4c0
         //"openid+profile+email+phone+address"
         
-        rzAuthSDK.loginRazerID(urlScheme: appURLScheme, clientID: "2a4e2f04f25406895e4941282d113dd64df1e7f1", clientSecret: "f3dee2a4354beea06711d77a7f1e58caec8949a1", scope: "openid+email", { (accessToken) in
+        rzAuthSDK.loginRazerID(urlScheme: appURLScheme, clientID: "2a4e2f04f25406895e4941282d113dd64df1e7f1", clientSecret: "f3dee2a4354beea06711d77a7f1e58caec8949a1", scope: "openid", { (accessToken) in
+            
             print("access::%@",accessToken)
             if (accessToken != nil)
             {
